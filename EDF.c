@@ -8,11 +8,11 @@
 #define abs_arrival		4
 #define execution_copy  5
 #define abs_deadline	6
-#define IDLE_TASK_ID 1023   // Just a number I assigned
+#define IDLE_TASK_ID 1023   
 #define ALL 1
 #define CURRENT 0
 
-//stucture of a task
+
 typedef struct
 {
 	int T[7],instance,alive;
@@ -197,7 +197,6 @@ float cpu_util(task *t1, int n)
 }
 
 
-//Something like a Timer in a Microcontroller
 int timer = 0;
 
 int main()
